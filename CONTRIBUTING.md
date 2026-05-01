@@ -1,79 +1,65 @@
 # Contributing to Awesome Context Engineering
 
-Thank you for your interest in contributing to this awesome list! Your contributions help make this resource more valuable for everyone customizing their AI assistants with personal context.
+This repo maps AI memory systems, context engineering patterns, and the emerging stack for persistent agent memory.
 
-## How to Contribute
+Contributions should make the landscape easier to compare, not just add more links.
 
-### Adding a Resource
+## How To Add a System
 
-1. **Check if the resource is relevant**: Ensure your submission relates to context engineering, AI customization, personal context management, or related technologies.
+1. Pick the most relevant landscape category:
+   - `landscape/frontier-platforms.md`
+   - `landscape/coding-agents.md`
+   - `landscape/local-agent-harnesses.md`
+   - `landscape/personal-memory-systems.md`
+   - `landscape/memory-infrastructure.md`
+   - `landscape/protocols-and-connectors.md`
+   - `landscape/team-knowledge-memory.md`
+2. Copy `templates/system-profile.md` into `systems/<system-name>.md`.
+3. Fill the profile with source-backed research.
+4. Add the system to the relevant landscape page.
+5. If the system is especially important, add it to the starter table in `README.md`.
 
-2. **Check for duplicates**: Search the list to make sure the resource isn't already included.
+## Profile Quality Bar
 
-3. **Follow the format**: Each entry should follow this format:
-   ```markdown
-   - [Resource Name](URL) - Brief description (one sentence).
-   ```
+Every system profile should answer these core questions:
 
-4. **Placement**: Add your resource to the appropriate section. If unsure, suggest a new section.
+- What does it remember?
+- What is the memory scope: session, project, user, team, organization, or cross-agent?
+- How is memory written?
+- How is memory retrieved?
+- How much control does the user have?
+- How portable is the memory?
+- What are the system's strengths and limitations?
+- How does it relate to Membase or the broader universal memory layer pattern?
 
-5. **Quality standards**: Resources should be:
-   - Actively maintained (for repositories)
-   - Well-documented
-   - Relevant to context engineering and AI customization
-   - Accessible (not behind paywalls for core content)
+## Sources
 
-### Pull Request Guidelines
+Use primary sources whenever possible:
 
-1. **One resource per pull request**: This makes it easier to review and discuss.
+- Official docs
+- Official blog posts
+- Product pages
+- GitHub repositories
+- Technical papers
+- Maintainer-written examples
 
-2. **Descriptive title**: Use a clear title like "Add [Resource Name] to [Section]"
+When primary sources are not enough, secondary sources are allowed, but mark them clearly.
 
-3. **Description**: In your PR description, briefly explain:
-   - What the resource is
-   - Why it's valuable for context engineering
-   - How you tested/used it (if applicable)
+## Writing Style
 
-4. **Maintain alphabetical order**: Keep entries alphabetized within each section.
+- Be factual and specific.
+- Avoid hype and vague claims.
+- Prefer comparison-friendly wording.
+- Mention uncertainty with `TBD` instead of guessing.
+- Keep the `Relationship to Membase` section analytical, not promotional.
 
-5. **Check your spelling and grammar**: Run a spell check before submitting.
+## Pull Request Guidelines
 
-### What Makes a Resource Awesome?
-
-Resources should be:
-- **High quality**: Well-maintained, documented, and useful
-- **Relevant**: Directly related to context engineering, AI customization, or enabling technologies
-- **Accessible**: Free to use or has a meaningful free tier
-- **Active**: Recently updated (within the last 2 years for projects)
-
-### Sections
-
-Current sections include:
-- **Platform-Specific Customization**: Claude, Cursor, ChatGPT, VS Code Copilot customization guides
-- **Model Context Protocol (MCP)**: MCP servers and implementations
-- **Context Management Techniques**: Best practices and strategies
-- **Memory & Persistence**: Long-term memory systems and frameworks
-- **Research & Articles**: Academic papers and industry articles
-- **Tools & Frameworks**: Development tools for context-aware AI
-
-Feel free to suggest new sections if your resource doesn't fit existing categories.
-
-## Code of Conduct
-
-- Be respectful and constructive in all interactions
-- Focus on the quality of resources, not promotion
-- Respect the maintainers' decisions on inclusion
-- Help improve existing entries when you notice issues
-
-## Questions?
-
-If you're unsure about anything, feel free to:
-- Open an issue to discuss before submitting a PR
-- Ask questions in your PR comments
-- Reach out to the maintainers
+- One system profile per PR is preferred.
+- Include source links in the profile.
+- Explain what category the system belongs to and why.
+- Keep unrelated formatting changes out of the PR.
 
 ## License Agreement
 
 By contributing, you agree that your contributions will be licensed under the Apache License 2.0, the same license as this project.
-
-Thank you for contributing! 🎉
