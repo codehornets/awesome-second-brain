@@ -1,6 +1,6 @@
 <div align="center">
 
-# Awesome Second Brain
+# Awesome AI Second Brain
 
 [![Context Engineering Banner](https://github.com/user-attachments/assets/57a6320b-5f9d-4703-a692-0280f20a7bb6)](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)
 
@@ -14,9 +14,9 @@
 
 </div>
 
-> A practical, source-backed landscape for choosing an AI-native second brain.
+> Find the best way to give AI agents durable memory across your tools, sources, and team.
 
-This repo is for AI power users who want memory that survives across ChatGPT, Claude, Cursor, Codex, local agents, team workflows, and source documents. It compares what each solution actually supports, what operating burden to expect, and which official docs to use next.
+A curated comparison of second brain and agent memory systems for people who want AI to understand their personal context, team knowledge, and working history across tools. It covers how each solution captures scattered context, structures knowledge, retrieves the right memory, shares it across agents or teammates, and fits into real workflows.
 
 ## Start Here
 
