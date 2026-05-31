@@ -17,22 +17,22 @@ NotebookLM lets users create notebooks from uploaded or discovered sources, then
 
 ## Second-Brain Fit
 
-NotebookLM is strong for bounded research over known sources. It is weaker as a living cross-agent memory layer because sources are imported into notebooks and agent access is platform-scoped.
+NotebookLM is strong for bounded research over known sources. It is weaker as a living second brain because sources are imported into notebooks and use is platform-scoped.
 
 ## Capabilities
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Hosted Google product. |
-| Data capture | Built-in upload/import for docs, slides, sheets, images, Word, text, Markdown, PDF, CSV, PowerPoint, web URLs, ePub, YouTube, audio, and Gemini Chats. |
-| Auto-organization | Built-in source summaries, source labels/categories, and generated artifacts. |
-| Consolidation / dreaming | Partial. Useful summaries and artifacts exist, but not an ongoing agent memory consolidation loop. |
-| Retrieval model | Source-grounded notebook chat and source selection. |
-| Agent access | NotebookLM/Gemini platform only for ordinary users. |
-| Workspace / team support | Sharing/collaboration depends on Google account/product tier. |
-| UI / filtering | Strong notebook UI, sources panel, source selection, labels, and generated artifacts. |
+| Deployment / ownership | Hosted Google product. |
+| Context capture | Built-in upload/import for docs, slides, sheets, images, Word, text, Markdown, PDF, CSV, PowerPoint, web URLs, ePub, YouTube, audio, and Gemini Chats. |
+| Knowledge organization | Built-in source summaries, source labels/categories, and generated artifacts. |
+| Memory evolution | Partial. Useful summaries and artifacts exist, but not an ongoing second-brain consolidation loop. |
+| Retrieval / use | Source-grounded notebook chat and source selection. |
+| Agent activation / write-back | NotebookLM/Gemini platform only for ordinary users. |
+| Personal / team scope | Sharing/collaboration depends on Google account/product tier. |
+| Feedback / correction | Strong notebook UI, sources panel, source selection, labels, and generated artifacts. |
 | Privacy / control | Hosted platform; imported sources are static copies except supported Drive sync behavior. |
-| Setup burden | Low. Create a notebook and add sources. |
+| Setup / operations | Low. Create a notebook and add sources. |
 
 ## Strengths
 
@@ -42,13 +42,25 @@ NotebookLM is strong for bounded research over known sources. It is weaker as a 
 
 ## Limitations
 
-- Not a persistent cross-agent memory layer.
+- Not a persistent second-brain layer across tools and workflows.
 - Sources can be static copies; non-Drive sources may need manual re-upload.
 - Not designed for agent write-back or team-wide memory governance.
 
-## Relationship to Membase
+## Best For
 
-NotebookLM is a strong research notebook. Membase is a living shared memory layer for agents. Use NotebookLM when the source set is bounded; use Membase when context should compound across agents and sessions.
+- Researchers, students, analysts, and teams working from a bounded source set.
+- Source-grounded Q&A, summaries, briefings, and study artifacts.
+- Workflows where the notebook itself is the primary interface.
+
+## Not Ideal For
+
+- Users who need memory to compound across many AI tools, teammates, and sessions.
+- Teams that need agent write-back into a shared knowledge layer.
+- Workflows where source freshness and automation are more important than bounded research.
+
+## Tradeoffs
+
+NotebookLM is excellent when the user can define the source set upfront and work inside a notebook. The tradeoff is that imported sources and generated artifacts do not behave like a living second brain by default.
 
 ## Official Setup / Evaluation Links
 

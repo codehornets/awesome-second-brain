@@ -1,8 +1,8 @@
-# Team / Workspace Boundaries
+# Personal / Team Scope
 
 ## What This Capability Means
 
-Boundaries define who can read, write, update, delete, and share memory across personal, project, workspace, team, and organization scopes.
+Personal and team scope defines who can read, write, update, delete, and share memory across personal, project, workspace, team, and organization contexts.
 
 ## Evaluation Questions
 
@@ -15,7 +15,7 @@ Boundaries define who can read, write, update, delete, and share memory across p
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Shared Memory/Wiki and connected agents. | Verify governance details for the target plan. |
+| Membase | Built-in | Shared Memory/Wiki and connected AI tools. | Verify governance details for the target plan. |
 | OpenHuman | Not primary fit | Personal local app and connected sources. | Team/workspace governance is not the core fit. |
 | GBrain | Integration | Sources, Postgres/Supabase, OAuth clients, federated reads. | Operationally heavier than hosted products. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
@@ -24,6 +24,9 @@ Boundaries define who can read, write, update, delete, and share memory across p
 | Cognee | Built-in in API mode | Shared backend/API mode. | Standalone mode isolates clients. |
 | Khoj | Partial | Deployment and source choices. | Primarily personal. |
 | Obsidian/Logseq + AI bridge | Partial | Shared vault/sync and permissions. | Team memory discipline is user-owned. |
+| ChatGPT Memory | Partial | Workspace/admin behavior depends on ChatGPT plan and settings. | Not designed as portable team memory. |
+| Claude Projects/Claude Code | Built-in on team plans | Team/Enterprise project sharing and permissions. | Scope remains Claude project/workspace oriented. |
+| NotebookLM | Partial | Sharing/collaboration depends on Google account and product tier. | Notebook boundaries are not full second-brain governance. |
 
 ## Sources
 

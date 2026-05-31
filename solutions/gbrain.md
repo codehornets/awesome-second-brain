@@ -7,40 +7,40 @@
 - Status: Active public repo
 - Open source: Yes
 - Deployment: Local PGLite by default; Postgres/Supabase and HTTP MCP paths for larger or team deployments
-- Primary users: AI agent operators, local-first brain builders, developers wiring memory into agents
-- Best second-brain role: Local or self-hosted agent brain
+- Primary users: Local-first brain builders, AI operators, and developers wiring memory into workflows
+- Best second-brain role: Local or self-hosted brain operations layer
 - Last reviewed: 2026-05-29
 - Reviewed evidence: local checkout `0.41.26.0`, commit `42d99b6f`, and private 2026-05-29 dogfooding handoff notes
 
 ## One-line Summary
 
-GBrain turns Markdown pages, captures, and agent-written knowledge into a searchable page/chunk/link/timeline/fact database with CLI, MCP, and scheduled maintenance workflows.
+GBrain turns Markdown pages, captures, and AI-written knowledge into a searchable page/chunk/link/timeline/fact database with CLI, MCP, and scheduled maintenance workflows.
 
 ## Second-Brain Fit
 
-GBrain is best understood as a brain database and operations layer for an agent-maintained second brain. It is not a polished no-code notes app or a generic vector database. It gives agents a structured local/self-hosted memory system, but external active context still needs collectors or exports.
+GBrain is best understood as a brain database and operations layer for a local/self-hosted second brain. It is not a polished no-code notes app or a generic vector database. It gives AI workflows a structured memory system, but external active context still needs collectors or exports.
 
 ## Capabilities
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Local PGLite; Postgres/Supabase and HTTP MCP for team or remote use. |
-| Data capture | Built-in Markdown import, capture, file/stdin, HTTP ingest, inbox folder, file watcher, and skillpack ingestion surfaces; external SaaS sources need recipes or custom collectors. |
-| Auto-organization | Built-in schema packs, page type inference, link extraction, timeline extraction, fact/take workflows, and deterministic graph signals. It is not a magic semantic classifier for arbitrary raw text. |
-| Consolidation / dreaming | Built-in `gbrain dream`, `gbrain autopilot`, sync/embed jobs, and maintenance phases. |
-| Retrieval model | Keyword search, RRF-style hybrid query when embeddings are configured, graph/link signals, timeline/fact retrieval, and `think` synthesis. |
-| Agent access | Built-in CLI plus stdio/HTTP MCP. |
-| Workspace / team support | Strong but operational: sources, separate brains, mounts/thin clients, Postgres/Supabase, OAuth clients, federated reads, and HTTP MCP. |
-| UI / filtering | Operations UI exists for HTTP MCP admin, agents, request logs, jobs, calibration, and live activity. A Notion/Roam-style visual knowledge UI is not the primary surface. |
+| Deployment / ownership | Local PGLite; Postgres/Supabase and HTTP MCP for team or remote use. |
+| Context capture | Built-in Markdown import, capture, file/stdin, HTTP ingest, inbox folder, file watcher, and skillpack ingestion surfaces; external SaaS sources need recipes or custom collectors. |
+| Knowledge organization | Built-in schema packs, page type inference, link extraction, timeline extraction, fact/take workflows, and deterministic graph signals. It is not a magic semantic classifier for arbitrary raw text. |
+| Memory evolution | Built-in `gbrain dream`, `gbrain autopilot`, sync/embed jobs, and maintenance phases. |
+| Retrieval / use | Keyword search, RRF-style hybrid query when embeddings are configured, graph/link signals, timeline/fact retrieval, and `think` synthesis. |
+| Agent activation / write-back | Built-in CLI plus stdio/HTTP MCP. |
+| Personal / team scope | Strong but operational: sources, separate brains, mounts/thin clients, Postgres/Supabase, OAuth clients, federated reads, and HTTP MCP. |
+| Feedback / correction | Operations UI exists for HTTP MCP admin, agents, request logs, jobs, calibration, and live activity. A Notion/Roam-style visual knowledge UI is not the primary surface. |
 | Privacy / control | Strong local/self-hosted control with Markdown/git-backed source options. |
-| Setup burden | Medium-high. Useful active-context setups require sync, embeddings, dream/autopilot, collectors, and verification. |
+| Setup / operations | Medium-high. Useful active-context setups require sync, embeddings, dream/autopilot, collectors, and verification. |
 
 ## Strengths
 
 - Strong local-first and self-hosted story.
 - Clear Markdown/page/chunk/link/timeline model.
 - Real maintenance loop through dream/autopilot.
-- CLI and MCP make it agent-operable.
+- CLI and MCP make it automation-friendly.
 - Deterministic graph behavior is easier to debug than pure semantic linking.
 - Source/type/tag/date filters and source-scoped slugs make multi-source brains analyzable.
 
@@ -65,9 +65,9 @@ GBrain is best understood as a brain database and operations layer for an agent-
 - Teams that do not want to run collectors or cron jobs.
 - Workflows that need polished no-code UI first.
 
-## Relationship to Membase
+## Tradeoffs
 
-GBrain represents the local/self-hosted brain pattern. Membase represents the hosted shared-memory pattern. GBrain is stronger when users want control and operability; Membase is easier when users want shared memory across agents without running the stack.
+GBrain gives users stronger local and self-hosted control, but that control comes with operational work: collectors, sync jobs, embeddings, maintenance, and verification. It is a better fit when users want to operate their own brain stack than when they want the fastest end-to-end second-brain setup.
 
 ## Official Setup / Evaluation Links
 

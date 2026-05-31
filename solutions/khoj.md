@@ -23,16 +23,16 @@ Khoj is a good second-brain option for users who want to ask questions over PDFs
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Cloud or self-hosted. |
-| Data capture | Built-in support for files and note sources including PDF, plaintext, Markdown, org-mode, and Notion pages. |
-| Auto-organization | Built-in indexing and search over documents; deep schema/graph curation is not the primary model. |
-| Consolidation / dreaming | Partial. Useful retrieval and assistant workflows exist, but a named dream loop is not the core positioning. |
-| Retrieval model | Natural-language search and chat over shared files. |
-| Agent access | App/client-first: Emacs, Obsidian, desktop, and browser. API/agent details should be verified for the target setup. |
-| Workspace / team support | Possible through deployment and source choices, but best fit is personal AI. |
-| UI / filtering | Web/desktop/client interfaces and source-specific workflows. |
+| Deployment / ownership | Cloud or self-hosted. |
+| Context capture | Built-in support for files and note sources including PDF, plaintext, Markdown, org-mode, and Notion pages. |
+| Knowledge organization | Built-in indexing and search over documents; deep schema/graph curation is not the primary model. |
+| Memory evolution | Partial. Useful retrieval and assistant workflows exist, but a named dream loop is not the core positioning. |
+| Retrieval / use | Natural-language search and chat over shared files. |
+| Agent activation / write-back | App/client-first: Emacs, Obsidian, desktop, and browser. API/agent details should be verified for the target setup. |
+| Personal / team scope | Possible through deployment and source choices, but best fit is personal AI. |
+| Feedback / correction | Web/desktop/client interfaces and source-specific workflows. |
 | Privacy / control | Self-hosting option for privacy; cloud option for convenience. |
-| Setup burden | Medium. Cloud is faster; self-hosting requires runtime and source setup. |
+| Setup / operations | Medium. Cloud is faster; self-hosting requires runtime and source setup. |
 
 ## Strengths
 
@@ -43,13 +43,25 @@ Khoj is a good second-brain option for users who want to ask questions over PDFs
 
 ## Limitations
 
-- Not primarily a universal cross-agent memory layer.
-- Less focused on agent write-back and shared team memory than Membase or developer memory APIs.
+- Not primarily an end-to-end second-brain layer across many AI tools.
+- Less focused on write-back and shared team memory than developer memory APIs or hosted second-brain platforms.
 - Source freshness and self-hosting operations remain user responsibilities.
 
-## Relationship to Membase
+## Best For
 
-Khoj is a personal AI over files and notes. Membase is a shared memory layer for multiple agents. They can complement each other when a user wants both document Q&A and portable agent memory.
+- People who want a personal AI over files, notes, PDFs, and documents.
+- Obsidian, Emacs, Markdown, and self-hosting users.
+- Workflows where source Q&A matters more than broad second-brain automation.
+
+## Not Ideal For
+
+- Teams that need shared memory governance across many tools and sources.
+- Users who need automatic write-back from many AI tools.
+- Builders who need a memory API as the primary product primitive.
+
+## Tradeoffs
+
+Khoj optimizes for personal document and note retrieval with cloud and self-hosted choices. The tradeoff is that it is more of a personal AI over sources than a low-friction end-to-end second brain for many tools and teammates.
 
 ## Official Setup / Evaluation Links
 

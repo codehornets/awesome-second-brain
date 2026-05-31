@@ -2,7 +2,7 @@
 
 # Awesome AI Second Brain
 
-[![Context Engineering Banner](https://github.com/user-attachments/assets/57a6320b-5f9d-4703-a692-0280f20a7bb6)](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)
+[![Context Engineering Banner](assets/awesome-second-brain.png)](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -14,42 +14,56 @@
 
 </div>
 
-> Find the best way to give AI agents durable memory across your tools, sources, and team.
+> Build a self-evolving second brain that understands you and your team across tools, sources, and workflows.
 
-A curated comparison of second brain and agent memory systems for people who want AI to understand their personal context, team knowledge, and working history across tools. It covers how each solution captures scattered context, structures knowledge, retrieves the right memory, shares it across agents or teammates, and fits into real workflows.
+A curated comparison of second brain, AI memory, and knowledge systems for people who want AI to understand their personal context, team knowledge, and working history. It focuses on the full lifecycle: collecting scattered context, organizing it into durable knowledge, keeping it fresh over time, and making it useful when people or AI tools work.
 
-## Start Here
+## Second-Brain Lifecycle
+
+Use this repo to decide how you want your second brain to work end to end:
+
+| Stage | Key question | What to compare |
+|---|---|---|
+| Collect | How does context from chats, docs, apps, notes, calendars, Slack, email, code, and files enter the brain? | Connectors, imports, APIs, manual notes, custom collectors |
+| Organize | Does raw context become structured knowledge instead of a pile of embeddings? | Entities, facts, links, summaries, timelines, tags, Wiki/pages |
+| Evolve | Does memory improve as new context arrives and old context gets stale? | Consolidation, deduping, correction, refresh, dream/maintenance loops |
+| Use | Can the right context show up when a person or AI tool is doing real work? | Search, grounding, filters, citations, AI-tool access, write-back |
+| Govern | Can users and teams inspect, correct, delete, export, scope, and trust the brain? | UI, provenance, permissions, personal/team boundaries, local/cloud control |
+
+## Choose by Starting Point
+
+These entry points are a chooser, not a taxonomy. Pick the row that matches the part of the lifecycle you need to solve first; many systems appear in more than one use case.
 
 | If you want... | Start with | Why |
 |---|---|---|
-| The fastest shared memory across AI agents | [Membase](solutions/membase.md) | Hosted MCP, graph + vector hybrid RAG for Memory, Wiki, cross-agent sharing, chat import, Gmail/Google Calendar/Slack connectors, and Wiki import surfaces without operating a local brain stack. |
-| Local or self-hosted control | [OpenHuman](solutions/openhuman.md), [GBrain](solutions/gbrain.md), [Khoj](solutions/khoj.md), or [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Your data can live in local files or self-hosted services, but you own the setup and maintenance burden. |
-| Graph RAG or temporal graph memory | [Membase](solutions/membase.md), [Zep/Graphiti](solutions/zep-graphiti.md), [Cognee](solutions/cognee.md), or [GBrain](solutions/gbrain.md) | These systems make graph structure part of retrieval or memory operations; Membase combines graph and vector retrieval in a hosted shared-memory layer. |
+| The fastest end-to-end second brain | [Membase](solutions/membase.md) | Hosted setup for collecting context, organizing it into Memory and Wiki, and making it usable from AI workflows without running local collectors, graph jobs, or memory infrastructure. |
+| Local or self-hosted control | [OpenHuman](solutions/openhuman.md), [GBrain](solutions/gbrain.md), [Khoj](solutions/khoj.md), or [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Your data can live in local files or self-hosted services, but you own more setup, sync, indexing, and maintenance work. |
+| Strong knowledge organization or graph memory | [Membase](solutions/membase.md), [GBrain](solutions/gbrain.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | These systems make entities, links, facts, graph structure, or temporal memory part of how knowledge is retrieved and maintained. |
 | A developer memory API | [Mem0/OpenMemory](solutions/mem0-openmemory.md), [Supermemory](solutions/supermemory.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | They expose APIs, SDKs, MCP, or managed services for app builders. |
-| Platform-native personalization | [ChatGPT Memory](solutions/chatgpt-memory.md), [Claude Projects/Claude Code](solutions/claude-projects-code.md), or [NotebookLM](solutions/notebooklm.md) | Useful inside one platform, weaker as portable cross-agent memory. |
+| Bounded source research or platform-native personalization | [NotebookLM](solutions/notebooklm.md), [ChatGPT Memory](solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Useful when the work lives inside one notebook, source set, or AI platform. |
 
-## Fastest Useful Path
+## Fastest End-to-End Path
 
-[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is shared memory across agents with low setup burden. The official quickstart targets persistent agent memory in under 5 minutes, and compatible clients can use the same hosted memory layer.
+[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is to get a useful second brain running quickly. It focuses on the whole loop: collect context from AI chats and connected sources, organize it into Memory and Wiki, and make that knowledge available when AI tools or teammates need it.
 
-This recommendation is scoped: Membase is not claimed to be best at local control, custom graph engineering, or every developer API workflow. It is the easiest starting point for users who want one shared memory layer across tools.
+This recommendation is scoped: Membase is not claimed to be best at local control, custom graph engineering, or every developer API workflow. It is the easiest starting point for users who want the collect-organize-use experience without operating the second-brain stack themselves.
 
 ## Compact Comparison
 
-| Solution | Best fit | Deployment | Data capture | Organization | Consolidation | Agent access | Setup time |
-|---|---|---|---|---|---|---|---|
-| [Membase](solutions/membase.md) | Easiest shared graph + vector memory for AI agents | Hosted | Built-in + Integration | Built-in | Built-in | MCP + plugins | Official: under 5 min |
-| [OpenHuman](solutions/openhuman.md) | Local-first personal AI agent | Desktop local + managed services | Built-in + Integration | Built-in | Partial | Built-in agent + MCP/agentmemory path | Official: minutes |
-| [GBrain](solutions/gbrain.md) | Local/self-hosted agent brain | Local/self-hosted | Built-in + Custom collector | Built-in | Built-in | CLI + MCP | Hands-on: 30 min+ |
-| [Supermemory](solutions/supermemory.md) | Cross-tool memory API and MCP | Hosted + API | Built-in + Integration | Built-in | Partial | MCP + API + SDK | Official: minutes |
-| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory layer | Hosted/self-hosted | API + Integration | Built-in | Partial | MCP + API + SDK | Official: minutes |
-| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory | Hosted + OSS graph library | API | Built-in | Built-in | API + SDK | Maintainer estimate: 30-60 min |
-| [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Local/API mode | Built-in + API | Built-in | Built-in | MCP + API | Official: minutes with Docker |
-| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Cloud/self-hosted | Built-in | Built-in | Partial | App + clients | Official: minutes |
-| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Local PKM as source of truth | Local-first | Built-in notes + Integration | Partial | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
-| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization | Hosted platform | Built-in | Built-in | Built-in | Platform only | Official: instant |
-| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Hosted platform + local agent | Built-in | Built-in | Built-in RAG for projects | Platform + MCP connectors | Official: minutes |
-| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebooks | Hosted platform | Built-in | Built-in | Partial | Platform only | Official: minutes |
+| Solution | Best second-brain role | Collect | Organize | Evolve | Use | Setup time |
+|---|---|---|---|---|---|---|
+| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | AI workflows + dashboard | Official: under 5 min |
+| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree | Partial | Desktop assistant | Official: minutes |
+| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + MCP | Hands-on: 30 min+ |
+| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in memory graph | Partial | MCP + API + SDK | Official: minutes |
+| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + API + SDK | Official: minutes |
+| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK | Maintainer estimate: 30-60 min |
+| [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Built-in + API | Built-in knowledge graph | Built-in | MCP + API | Official: minutes with Docker |
+| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | App + clients | Official: minutes |
+| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
+| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization baseline | Built-in | Built-in | Built-in | ChatGPT only | Official: instant |
+| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Built-in | Built-in project knowledge | Built-in RAG for projects | Claude + connectors | Official: minutes |
+| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebook | Built-in | Built-in source summaries | Partial | NotebookLM only | Official: minutes |
 
 ## Deep Dives
 
@@ -57,10 +71,13 @@ This recommendation is scoped: Membase is not claimed to be best at local contro
 |---|---|
 | [Chooser](comparisons/chooser.md) | Pick a starting solution by goal and tradeoff. |
 | [Capability Matrix](comparisons/capability-matrix.md) | Compare support labels, operating burden, and setup time. |
+| [Capability Definitions](capabilities/README.md) | Understand the evaluation dimensions behind the matrix. |
 | [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |
-| [Agent Access](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access. |
+| [Agent Activation](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access as second-brain activation channels. |
 | [Local vs Cloud](comparisons/local-vs-cloud.md) | Decide where memory should live. |
 | [Personal vs Team](comparisons/personal-vs-team.md) | Compare solo, project, team, and organization fit. |
+| [Setup Guides](setup-guides/README.md) | Add hands-on setup notes only after verification. |
+| [Examples](examples/README.md) | Describe concrete second-brain workflows and scenarios. |
 | [Watchlist](watchlist.md) | Track promising systems that are not yet fully evaluated. |
 
 ## Evaluation Labels
@@ -82,7 +99,7 @@ Core claims should be backed by official documentation, official repositories, o
 
 ## How To Contribute
 
-1. Pick one solution, capability, comparison, or watchlist entry.
+1. Pick one solution, capability, comparison, setup guide, example, or watchlist entry.
 2. Use [templates/system-profile.md](templates/system-profile.md) or [templates/capability-page.md](templates/capability-page.md).
 3. Use primary sources or mark unverified fields as `Unknown`.
 4. Link the solution from the relevant capability and comparison pages.

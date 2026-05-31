@@ -7,8 +7,8 @@
 - Status: Active hosted product and developer platform
 - Open source: Public GitHub/MCP links are provided; hosted platform is managed
 - Deployment: Hosted MCP and API platform
-- Primary users: Developers and AI power users who want one memory across tools
-- Best second-brain role: Cross-tool memory API and MCP layer
+- Primary users: Developers and AI power users who want hosted memory across tools
+- Best second-brain role: Hosted memory API and connector layer
 - Last reviewed: 2026-05-29
 
 ## One-line Summary
@@ -17,22 +17,22 @@ Supermemory provides a hosted memory layer with MCP, API, SDKs, connectors, proj
 
 ## Second-Brain Fit
 
-Supermemory is a strong fit when the user wants cross-tool memory and developer-facing APIs. It overlaps with Membase on the "one memory across agents" problem, but is framed more as a memory API/developer platform.
+Supermemory is a strong fit when the user wants hosted memory with developer-facing APIs. It is especially relevant when memory needs to be available through MCP, connectors, projects, and application APIs.
 
 ## Capabilities
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Hosted MCP at `https://mcp.supermemory.ai/mcp` plus API platform. |
-| Data capture | Built-in connectors for Google Drive, Gmail, Notion, OneDrive, GitHub, and Web Crawler; API ingestion for custom apps. |
-| Auto-organization | Built-in document processing, memory graph, metadata, and filtering concepts. |
-| Consolidation / dreaming | Partial. The platform processes and indexes synced content, but a user-visible dreaming loop is not the primary positioning. |
-| Retrieval model | Search, RAG, memory graph, and API retrieval surfaces. |
-| Agent access | Built-in MCP, OAuth/API-key auth, API, SDK, and supported MCP clients. |
-| Workspace / team support | Project scoping and container tags help separate contexts. Team governance should be verified for the target plan. |
-| UI / filtering | Hosted app, console, project scoping, connector status, and API filters. |
+| Deployment / ownership | Hosted MCP at `https://mcp.supermemory.ai/mcp` plus API platform. |
+| Context capture | Built-in connectors for Google Drive, Gmail, Notion, OneDrive, GitHub, and Web Crawler; API ingestion for custom apps. |
+| Knowledge organization | Built-in document processing, memory graph, metadata, and filtering concepts. |
+| Memory evolution | Partial. The platform processes and indexes synced content, but a user-visible dreaming loop is not the primary positioning. |
+| Retrieval / use | Search, RAG, memory graph, and API retrieval surfaces. |
+| Agent activation / write-back | Built-in MCP, OAuth/API-key auth, API, SDK, and supported MCP clients. |
+| Personal / team scope | Project scoping and container tags help separate contexts. Team governance should be verified for the target plan. |
+| Feedback / correction | Hosted app, console, project scoping, connector status, and API filters. |
 | Privacy / control | Hosted by default. Data deletion and connector retention semantics should be verified per connector. |
-| Setup burden | Low-medium. MCP setup is minutes; connector/API setup adds more work. |
+| Setup / operations | Low-medium. MCP setup is minutes; connector/API setup adds more work. |
 
 ## Strengths
 
@@ -47,9 +47,21 @@ Supermemory is a strong fit when the user wants cross-tool memory and developer-
 - Less local-control-oriented than GBrain, Khoj, or Obsidian/Logseq.
 - Consolidation behavior is less explicit than systems with named dream/autopilot loops.
 
-## Relationship to Membase
+## Best For
 
-Supermemory is a close alternative in the shared-memory layer category. Membase has a clearer Memory/Wiki split and a more direct "easiest shared agent memory" story; Supermemory is especially relevant for users who want API-first memory and connectors.
+- Developers and AI power users who want MCP plus APIs and SDKs.
+- Workflows that need connector-based ingestion into project-scoped memory.
+- Products or internal tools that need memory as a hosted service.
+
+## Not Ideal For
+
+- Users who require local-only storage.
+- Teams that need a highly visible user-operated consolidation loop.
+- Nontechnical users who do not want to reason about API/project setup.
+
+## Tradeoffs
+
+Supermemory offers a strong hosted memory API and connector story. The tradeoff is that users still need to reason about project scoping, connector state, and API behavior when using it as a broader second-brain layer.
 
 ## Official Setup / Evaluation Links
 

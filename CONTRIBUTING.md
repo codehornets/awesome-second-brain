@@ -11,7 +11,7 @@ Good contributions answer practical questions:
 - What data can it ingest?
 - Does raw data become organized knowledge automatically?
 - Does it support consolidation, reflection, or a dream cycle?
-- Can agents read and write through MCP, API, SDK, CLI, or plugins?
+- Can AI tools read and write through MCP, API, SDK, CLI, or plugins?
 - Can users separate personal, project, workspace, and team scopes?
 - What can users inspect, edit, delete, export, or audit?
 
@@ -23,22 +23,28 @@ Good contributions answer practical questions:
 4. Link official setup docs, official repos, and primary source material instead of duplicating command-by-command setup instructions.
 5. Mark uncertain fields as `Unknown` instead of guessing.
 
+## How To Add a Setup Guide or Example
+
+Use `setup-guides/` for verified setup paths and `examples/` for scenario-level workflows. Do not add a setup guide unless you can explain how to verify that retrieval or write-back actually worked.
+
 ## Profile Quality Bar
 
 Every solution profile should answer:
 
-- deployment model
-- data capture model
-- auto-organization model
-- consolidation or dreaming model
-- retrieval model
-- agent access surfaces
+- deployment and control model
+- context capture model
+- knowledge organization model
+- consolidation or maintenance model
+- retrieval and grounding model
+- AI-tool activation and write-back surfaces
 - workspace and team support
-- UI and filtering surfaces
-- privacy, control, and portability
+- UI, inspection, and correction surfaces
+- privacy, portability, and control
 - setup burden
+- best-fit users
+- non-fit users
+- tradeoffs
 - official setup or evaluation links
-- relationship to Membase
 
 ## Sources
 
@@ -58,7 +64,7 @@ When using local or internal test reports, summarize them clearly and avoid pres
 - Prefer decision-oriented landscape wording over tutorial wording.
 - Distinguish built-in support from integration support and custom collector work.
 - Use the standard support labels from [README.md](README.md).
-- Keep `Relationship to Membase` analytical, not promotional.
+- Keep recommendations scoped to the workflow they are best for, and explain tradeoffs without promotional framing.
 
 ## Pull Request Guidelines
 

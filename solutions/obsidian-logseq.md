@@ -23,33 +23,45 @@ This path is best when the user wants their notes to remain inspectable local fi
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Local-first vault/graph, optional sync, optional plugins or services. |
-| Data capture | Built-in notes, files, backlinks, graph views, daily notes, PDF/annotation workflows depending on app. |
-| Auto-organization | Partial. Links, tags, properties, blocks, and plugins help; AI organization depends on chosen bridge. |
-| Consolidation / dreaming | Custom collector. Nightly review, summarization, or memory extraction must be plugin/script/agent-driven. |
-| Retrieval model | Local search, backlinks, graph views, and plugin-provided RAG/search. |
-| Agent access | Plugin/MCP bridge, import into a memory layer, or custom filesystem tools. |
-| Workspace / team support | Personal and project fit is strong; team workflows depend on sync, permissions, and shared vault discipline. |
-| UI / filtering | Strong human UI: graph, backlinks, tags, properties, search, pages/blocks. |
+| Deployment / ownership | Local-first vault/graph, optional sync, optional plugins or services. |
+| Context capture | Built-in notes, files, backlinks, graph views, daily notes, PDF/annotation workflows depending on app. |
+| Knowledge organization | Partial. Links, tags, properties, blocks, and plugins help; AI organization depends on chosen bridge. |
+| Memory evolution | Custom collector. Nightly review, summarization, or memory extraction must be plugin/script/agent-driven. |
+| Retrieval / use | Local search, backlinks, graph views, and plugin-provided RAG/search. |
+| Agent activation / write-back | Plugin/MCP bridge, import into a memory layer, or custom filesystem tools. |
+| Personal / team scope | Personal and project fit is strong; team workflows depend on sync, permissions, and shared vault discipline. |
+| Feedback / correction | Strong human UI: graph, backlinks, tags, properties, search, pages/blocks. |
 | Privacy / control | Strong local ownership, but plugin permissions must be treated carefully. |
-| Setup burden | Medium-high when AI access is required. |
+| Setup / operations | Medium-high when AI access is required. |
 
 ## Strengths
 
 - Human-readable local knowledge base.
 - Strong personal ownership and portability.
 - Mature PKM workflows and communities.
-- Works well as source material for GBrain, Membase Wiki, Khoj, or custom RAG.
+- Works well as source material for second-brain layers, personal AI tools, or custom RAG.
 
 ## Limitations
 
-- Not automatically shared across agents.
+- Not automatically available across AI tools.
 - AI write-back can damage vault quality without review.
 - Plugin security and sync conflicts require care.
 
-## Relationship to Membase
+## Best For
 
-Obsidian/Logseq can be the user's source-of-truth notes. Membase can import or connect those notes into a shared Memory/Wiki layer that agents can use across tools.
+- Knowledge workers who want human-owned local notes.
+- Users who already maintain an Obsidian vault or Logseq graph.
+- Workflows where reviewable source-of-truth notes matter most.
+
+## Not Ideal For
+
+- Users who want automatic second-brain automation without bridge setup.
+- Teams that need turnkey permissions, governance, and shared retrieval.
+- Workflows where agents should write freely without human review.
+
+## Tradeoffs
+
+Obsidian and Logseq maximize ownership, readability, and manual knowledge craft. The tradeoff is automation: turning a vault or graph into a reliable self-evolving second brain requires plugins, import workflows, MCP bridges, or custom scripts.
 
 ## Official Setup / Evaluation Links
 

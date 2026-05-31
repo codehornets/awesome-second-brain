@@ -23,16 +23,16 @@ Claude Projects are strong for scoped project knowledge inside Claude. They are 
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Hosted Claude projects; Claude Code runs in the developer environment. |
-| Data capture | Built-in file/document upload and project instructions; connectors depend on Claude plan and settings. |
-| Auto-organization | Built-in project knowledge handling and RAG activation for larger project knowledge on paid plans. |
-| Consolidation / dreaming | Built-in platform behavior, not a user-operated dream loop. |
-| Retrieval model | Project knowledge search/RAG when needed. |
-| Agent access | Claude platform, Claude Code, and Claude connectors/MCP where enabled. |
-| Workspace / team support | Projects can be shared on Team and Enterprise plans with permission levels. |
-| UI / filtering | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. |
+| Deployment / ownership | Hosted Claude projects; Claude Code runs in the developer environment. |
+| Context capture | Built-in file/document upload and project instructions; connectors depend on Claude plan and settings. |
+| Knowledge organization | Built-in project knowledge handling and RAG activation for larger project knowledge on paid plans. |
+| Memory evolution | Built-in platform behavior, not a user-operated dream loop. |
+| Retrieval / use | Project knowledge search/RAG when needed. |
+| Agent activation / write-back | Claude platform, Claude Code, and Claude connectors/MCP where enabled. |
+| Personal / team scope | Projects can be shared on Team and Enterprise plans with permission levels. |
+| Feedback / correction | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. |
 | Privacy / control | Plan and workspace controls determine visibility and connector access. |
-| Setup burden | Low-medium. Create a project, add knowledge, connect tools as needed. |
+| Setup / operations | Low-medium. Create a project, add knowledge, connect tools as needed. |
 
 ## Strengths
 
@@ -44,12 +44,24 @@ Claude Projects are strong for scoped project knowledge inside Claude. They are 
 ## Limitations
 
 - Memory is Claude-scoped unless external connectors are added.
-- Not a universal cross-agent memory layer.
+- Not a universal second-brain layer across tools.
 - Project knowledge is not the same as a structured long-term personal/team memory backend.
 
-## Relationship to Membase
+## Best For
 
-Claude Projects are useful attached/project memory. Membase complements them by making memory portable across Claude and non-Claude agents.
+- Claude users who want project-scoped knowledge and instructions.
+- Teams already working inside Claude Team or Enterprise plans.
+- Developers using Claude Code for repo-local workflows.
+
+## Not Ideal For
+
+- Users who need one memory layer shared across non-Claude agents.
+- Workflows that require full control over retrieval, storage, and schema.
+- Long-lived personal/team knowledge that should outlive a single platform workspace.
+
+## Tradeoffs
+
+Claude Projects optimize for a polished Claude-native project workspace. The tradeoff is scope: project knowledge is useful inside Claude contexts, but it is not a portable memory system unless paired with external connectors or a separate memory backend.
 
 ## Official Setup / Evaluation Links
 

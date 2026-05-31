@@ -15,7 +15,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
-| Membase | Built-in | Account + agent connection. | Fastest path, hosted tradeoff. |
+| Membase | Built-in | Account + AI tool connection. | Fastest path, hosted tradeoff. |
 | OpenHuman | Built-in + Integration | Native desktop install, onboarding, app connections, provider choices. | Early beta; connector setup can expand scope. |
 | GBrain | Custom collector | CLI, brain repo, sync/embed/dream jobs, MCP. | Most operations-heavy core option. |
 | Supermemory | Built-in + Integration | MCP/API and connectors. | Connector health and project scoping matter. |
@@ -24,6 +24,9 @@ Setup and operations cover first install, authentication, source sync, indexing,
 | Cognee | Built-in | Docker/local/API mode and MCP config. | Choose mode carefully. |
 | Khoj | Built-in | Cloud or self-host plus sources. | Source freshness needs verification. |
 | Obsidian/Logseq + AI bridge | Integration | Notes app plus plugin/import/MCP bridge. | Strong ownership, more setup choices. |
+| ChatGPT Memory | Built-in | Enable or manage ChatGPT memory settings. | Instant, but platform-bound. |
+| Claude Projects/Claude Code | Built-in + Integration | Create a project, add knowledge, configure sharing/connectors, or use Claude Code. | Connector and team behavior depends on plan. |
+| NotebookLM | Built-in | Create a notebook and add supported sources. | Source refresh behavior depends on source type. |
 
 ## Sources
 

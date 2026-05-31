@@ -2,20 +2,20 @@
 
 Labels: `Built-in`, `Integration`, `Custom collector`, `Partial`, `Not primary fit`, `Unknown`.
 
-| Solution | Deployment | Data capture | Auto-organization | Consolidation / dreaming | Retrieval model | Agent access | Workspace / team | UI / filtering | Setup burden | Setup time |
+| Solution | Context capture | Knowledge organization | Memory evolution | Retrieval / use | Feedback / correction | Personal / team scope | Privacy / control | Agent activation | Setup / operations | Setup time |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Membase](../solutions/membase.md) | Hosted | Built-in + Integration | Built-in | Built-in | Graph + vector hybrid RAG for Memory; hybrid Wiki search | MCP + plugins | Built-in | Built-in | Low | Official: under 5 min |
-| [OpenHuman](../solutions/openhuman.md) | Desktop local + managed services | Built-in + Integration | Built-in | Partial | Local Memory Tree + semantic search | Built-in agent + MCP/agentmemory path | Not primary fit | Built-in | Low-medium | Official: minutes |
-| [GBrain](../solutions/gbrain.md) | Local/self-hosted | Built-in + Custom collector | Built-in | Built-in | Keyword + vector/hybrid + graph signals | CLI + MCP | Integration | Partial | Medium-high | Hands-on: 30 min+ |
-| [Supermemory](../solutions/supermemory.md) | Hosted + API | Built-in + Integration | Built-in | Partial | Memory API + RAG + memory graph | MCP + API + SDK | Integration | Built-in | Low-medium | Official: minutes |
-| [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Hosted/self-hosted | API + Integration | Built-in | Partial | Layered memory search | MCP + API + SDK | Built-in | Built-in | Medium | Official: minutes |
-| [Zep/Graphiti](../solutions/zep-graphiti.md) | Hosted + OSS graph library | API | Built-in | Built-in | Temporal knowledge graph + Graph RAG | API + SDK | Built-in | Partial | Medium | Maintainer estimate: 30-60 min |
-| [Cognee](../solutions/cognee.md) | Local/API mode | Built-in + API | Built-in | Built-in | Knowledge graph memory | MCP + API | Built-in in API mode | Partial | Medium | Official: minutes with Docker |
-| [Khoj](../solutions/khoj.md) | Cloud/self-hosted | Built-in | Built-in | Partial | Search over personal files and notes | App + clients | Partial | Built-in | Medium | Official: minutes |
-| [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | Local-first | Built-in notes + Integration | Partial | Custom collector | Local search/graph + plugin RAG | Plugin/MCP bridge | Partial | Built-in | Medium-high | Hands-on: 30-90 min |
-| [ChatGPT Memory](../solutions/chatgpt-memory.md) | Hosted platform | Built-in | Built-in | Built-in | Platform memory + chat history reference | Platform only | Partial | Built-in | Low | Official: instant |
-| [Claude Projects/Claude Code](../solutions/claude-projects-code.md) | Hosted platform + local agent | Built-in | Built-in | Built-in RAG for projects | Project knowledge search | Platform + MCP connectors | Built-in on team plans | Built-in | Low-medium | Official: minutes |
-| [NotebookLM](../solutions/notebooklm.md) | Hosted platform | Built-in | Built-in | Partial | Source-grounded notebook retrieval | Platform only | Partial | Built-in | Low | Official: minutes |
+| [Membase](../solutions/membase.md) | Built-in + Integration | Built-in Memory + Wiki | Built-in | Graph + vector hybrid RAG for Memory; hybrid Wiki search | Built-in dashboard controls | Built-in | Hosted controls | MCP + plugins | Low | Official: under 5 min |
+| [OpenHuman](../solutions/openhuman.md) | Built-in + Integration | Built-in Memory Tree | Partial | Local Memory Tree + semantic search | Built-in desktop surfaces | Not primary fit | Local memory + managed services | Built-in assistant + MCP/agentmemory path | Low-medium | Official: minutes |
+| [GBrain](../solutions/gbrain.md) | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | Keyword + vector/hybrid + graph signals | Partial operations UI | Integration | Local/self-hosted control | CLI + MCP | Medium-high | Hands-on: 30 min+ |
+| [Supermemory](../solutions/supermemory.md) | Built-in + Integration | Built-in memory graph | Partial | Memory API + RAG + memory graph | Built-in hosted app/console | Integration | Hosted controls | MCP + API + SDK | Low-medium | Official: minutes |
+| [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API + Integration | Built-in memory scopes | Partial | Layered memory search | Built-in dashboard/server paths | Built-in | Hosted or self-hosted | MCP + API + SDK | Medium | Official: minutes |
+| [Zep/Graphiti](../solutions/zep-graphiti.md) | API | Built-in temporal graph | Built-in | Temporal knowledge graph + Graph RAG | Partial developer UI/APIs | Built-in | Hosted or OSS library path | API + SDK | Medium | Maintainer estimate: 30-60 min |
+| [Cognee](../solutions/cognee.md) | Built-in + API | Built-in knowledge graph | Built-in | Knowledge graph memory | Partial developer/admin surfaces | Built-in in API mode | Local mode or shared API mode | MCP + API | Medium | Official: minutes with Docker |
+| [Khoj](../solutions/khoj.md) | Built-in | Built-in indexing/search | Partial | Search over personal files and notes | Built-in app/client UI | Partial | Cloud or self-hosted | App + clients | Medium | Official: minutes |
+| [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Local search/graph + plugin RAG | Built-in human review UI | Partial | Local vault/graph control | Plugin/MCP bridge | Medium-high | Hands-on: 30-90 min |
+| [ChatGPT Memory](../solutions/chatgpt-memory.md) | Built-in | Built-in | Built-in | Platform memory + chat history reference | Built-in settings | Partial | Platform controls | Platform only | Low | Official: instant |
+| [Claude Projects/Claude Code](../solutions/claude-projects-code.md) | Built-in | Built-in project knowledge | Built-in RAG for projects | Project knowledge search | Built-in project UI | Built-in on team plans | Plan/workspace controls | Claude + connectors | Low-medium | Official: minutes |
+| [NotebookLM](../solutions/notebooklm.md) | Built-in | Built-in source summaries | Partial | Source-grounded notebook retrieval | Built-in notebook UI | Partial | Platform controls | Platform only | Low | Official: minutes |
 
 ## Reading Notes
 

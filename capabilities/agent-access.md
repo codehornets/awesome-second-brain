@@ -1,29 +1,21 @@
-# Agent Access
+# Agent Activation / Write-back
 
 ## What This Capability Means
 
-Agent access is how external agents search, retrieve, cite, write, update, or maintain the second brain.
+Agent activation and write-back define how AI tools search, retrieve, cite, write, update, or maintain the second brain while doing work.
 
 ## Evaluation Questions
 
 - Is access available through MCP, API, SDK, CLI, plugins, or platform-only tools?
-- Can agents write back?
+- Can AI tools write back?
 - Is access scoped by user, source, project, or workspace?
-- Can you verify the host agent actually used the tool?
+- Can you verify the host AI tool actually used the memory surface?
 
-## Solution Matrix
+## Scoring Guidance
 
-| Solution | Support label | Adoption path | Caveats |
-|---|---|---|---|
-| Membase | Built-in | Remote MCP, `start` prompt, profile/recent resources, client installers, and plugins. | Verify OAuth/auth and actual `search_memory` or `search_wiki` tool calls in the host agent. |
-| OpenHuman | Integration | Desktop agent first; agentmemory/MCP sharing path for related clients. | Not primarily a generic memory API. |
-| GBrain | Built-in | CLI, stdio MCP, HTTP MCP. | Local and remote callers can have different trust behavior. |
-| Supermemory | Built-in | MCP, OAuth/API key auth, API/SDK. | Project scoping should be explicit. |
-| Mem0/OpenMemory | Built-in | MCP, API, SDK. | App must define scope and governance. |
-| Zep/Graphiti | API + SDK | Application integration. | Not primarily end-user MCP setup. |
-| Cognee | Built-in | MCP in standalone or API mode. | Mode choice affects sharing. |
-| Khoj | Partial | Clients and app integrations. | Verify current API/bridge before calling it portable agent memory. |
-| Obsidian/Logseq + AI bridge | Integration | Plugin, MCP bridge, or filesystem tool. | Write-back should be reviewed. |
+Use this capability to decide whether the second brain is actually usable during AI-assisted work, not just whether storage is configured. A solution scores higher when an external AI tool can read and write memory through a documented surface, scope calls correctly, and show evidence that the host actually invoked the memory surface during work.
+
+For the per-solution comparison, see [../comparisons/agent-access.md](../comparisons/agent-access.md).
 
 ## Sources
 

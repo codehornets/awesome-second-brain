@@ -1,11 +1,11 @@
 # Templates
 
-Use these templates when adding or refreshing solution profiles and capability pages.
+Use these templates when adding or refreshing solution profiles and capability definition pages.
 
 | Template | Use for |
 |---|---|
 | [system-profile.md](system-profile.md) | A solution profile under `solutions/`. |
-| [capability-page.md](capability-page.md) | A capability comparison under `capabilities/`. |
+| [capability-page.md](capability-page.md) | A capability definition under `capabilities/`. |
 
 ## Workflow
 

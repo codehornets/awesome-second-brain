@@ -23,16 +23,16 @@ Unknown.
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Unknown. |
-| Data capture | Unknown. |
-| Auto-organization | Unknown. |
-| Consolidation / dreaming | Unknown. |
-| Retrieval model | Unknown. |
-| Agent access | Unknown. |
-| Workspace / team support | Unknown. |
-| UI / filtering | Unknown. |
+| Deployment / ownership | Unknown. |
+| Context capture | Unknown. |
+| Knowledge organization | Unknown. |
+| Memory evolution | Unknown. |
+| Retrieval / use | Unknown. |
+| Agent activation / write-back | Unknown. |
+| Personal / team scope | Unknown. |
+| Feedback / correction | Unknown. |
 | Privacy / control | Unknown. |
-| Setup burden | Unknown. |
+| Setup / operations | Unknown. |
 
 ## Strengths
 
@@ -50,7 +50,7 @@ Unknown.
 
 - Unknown.
 
-## Relationship to Membase
+## Tradeoffs
 
 Unknown.
 

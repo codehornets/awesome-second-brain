@@ -23,16 +23,16 @@ Mem0 is strongest as infrastructure for products and agents, not as a consumer n
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Hosted Mem0 Platform or open-source self-hosted setup. |
-| Data capture | API/SDK memory writes, MCP tools, and framework integrations. |
-| Auto-organization | Built-in memory layers: conversation, session, user, and organizational memory. |
-| Consolidation / dreaming | Partial. Memory promotion and retrieval are built in, but an explicit user-facing dream loop is not the core model. |
-| Retrieval model | Layered memory search with metadata, user IDs, run IDs, and platform retrieval features. |
-| Agent access | MCP plus API/SDK integrations. |
-| Workspace / team support | Organizational memory and platform governance features are documented. |
-| UI / filtering | Platform dashboard and self-hosted dashboard/server paths; metadata filtering in self-hosted docs. |
+| Deployment / ownership | Hosted Mem0 Platform or open-source self-hosted setup. |
+| Context capture | API/SDK memory writes, MCP tools, and framework integrations. |
+| Knowledge organization | Built-in memory layers: conversation, session, user, and organizational memory. |
+| Memory evolution | Partial. Memory promotion and retrieval are built in, but an explicit user-facing dream loop is not the core model. |
+| Retrieval / use | Layered memory search with metadata, user IDs, run IDs, and platform retrieval features. |
+| Agent activation / write-back | MCP plus API/SDK integrations. |
+| Personal / team scope | Organizational memory and platform governance features are documented. |
+| Feedback / correction | Platform dashboard and self-hosted dashboard/server paths; metadata filtering in self-hosted docs. |
 | Privacy / control | Hosted or self-hosted. OSS path gives infrastructure and data control. |
-| Setup burden | Medium. Hosted MCP is quick; self-hosting requires provider, vector store, and server decisions. |
+| Setup / operations | Medium. Hosted MCP is quick; self-hosting requires provider, vector store, and server decisions. |
 
 ## Strengths
 
@@ -47,9 +47,21 @@ Mem0 is strongest as infrastructure for products and agents, not as a consumer n
 - Requires memory scope design to avoid noisy or unsafe recall.
 - External app capture depends on integrations or custom application code.
 
-## Relationship to Membase
+## Best For
 
-Mem0 is a developer-oriented memory engine. Membase is more directly packaged for AI power users who want shared memory across daily agents with low setup burden.
+- Developers building AI apps with user, session, or organization memory.
+- Teams that need hosted and self-hosted memory infrastructure choices.
+- Agent frameworks that need APIs, SDKs, and MCP access.
+
+## Not Ideal For
+
+- Users who want a ready-made personal second-brain product.
+- Teams that do not want to design memory scopes and governance.
+- Workflows where app/source connectors matter more than programmable memory.
+
+## Tradeoffs
+
+Mem0 gives builders a flexible memory engine with hosted and self-hosted paths. The tradeoff is product work: teams still need to design capture, scope, metadata, safety, and recall behavior for their own use case.
 
 ## Official Setup / Evaluation Links
 

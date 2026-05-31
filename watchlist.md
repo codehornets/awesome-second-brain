@@ -11,9 +11,9 @@ These projects are relevant to AI second-brain architecture but are not yet full
 | Reflect | Encrypted AI notes app with backlinks and graph-oriented notes. | Candidate for AI notes / PKM category. |
 | Capacities | Object-based knowledge studio. | Candidate for object-centric PKM category. |
 | TideMind | Local-first AI second-brain positioning with knowledge graph claims. | Emerging local-first candidate. |
-| Dory | Local-first shared memory daemon for MCP-aware agents. | Emerging local-first agent memory candidate. |
+| Dory | Local-first shared memory daemon for MCP-aware agents. | Emerging local-first second-brain candidate. |
 | Open Second Brain | Obsidian-native memory layer for agents. | Emerging Obsidian/MCP candidate; separate from OpenHuman. |
-| MAGI | Persistent memory for AI agents. | Emerging shared-memory candidate. |
+| MAGI | Persistent memory for AI agents. | Emerging AI-memory candidate. |
 
 ## Promotion Rule
 
@@ -22,7 +22,7 @@ A watchlist item can become a core profile when it has:
 - official docs or repo evidence
 - deployment model
 - setup burden and official setup links
-- agent access surface
-- data capture and retrieval model
+- AI-tool activation surface
+- context capture and retrieval/use model
 - known limitations
-- relationship to Membase
+- tradeoffs

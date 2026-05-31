@@ -1,8 +1,8 @@
-# Auto Organization
+# Knowledge Organization
 
 ## What This Capability Means
 
-Auto organization is the system's ability to turn raw context into durable knowledge: summaries, entities, links, tags, schemas, graph edges, facts, timelines, or wiki pages.
+Knowledge organization is the system's ability to turn raw context into durable, reusable knowledge: summaries, entities, links, tags, schemas, graph edges, facts, timelines, or wiki pages.
 
 ## Evaluation Questions
 
@@ -24,6 +24,9 @@ Auto organization is the system's ability to turn raw context into durable knowl
 | Cognee | Built-in | Knowledge graph memory tools and processing. | Graph quality depends on ingestion and processing. |
 | Khoj | Built-in | Indexing/search over personal files and notes. | Less schema-heavy than graph memory systems. |
 | Obsidian/Logseq + AI bridge | Partial | Tags, links, properties, blocks, and plugins. | AI organization is bridge-dependent. |
+| ChatGPT Memory | Built-in | Platform-managed saved memories and chat history reference. | Organization is not developer-operable. |
+| Claude Projects/Claude Code | Built-in | Project knowledge, instructions, and platform RAG behavior. | Structure is scoped to Claude project contexts. |
+| NotebookLM | Built-in | Source summaries, labels/categories, and generated artifacts. | Strong for bounded notebooks, not a live memory graph. |
 
 ## Sources
 

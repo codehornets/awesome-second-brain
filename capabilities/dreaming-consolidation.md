@@ -1,12 +1,12 @@
-# Dreaming / Consolidation
+# Memory Evolution
 
 ## What This Capability Means
 
-Dreaming or consolidation is the periodic work that keeps memory useful after capture: summarization, deduplication, fact repair, stale embedding repair, source cleanup, pruning, or reflective synthesis.
+Memory evolution is the ongoing work that keeps a second brain useful after capture: summarization, deduplication, fact repair, stale embedding repair, source cleanup, pruning, reflection, or synthesis.
 
 ## Evaluation Questions
 
-- Is there a named maintenance loop?
+- Is there a named maintenance or evolution loop?
 - Is it product-managed, user-operated, or custom?
 - Does it repair retrieval quality or only summarize?
 - Can users inspect proposed changes before they become durable memory?
@@ -24,6 +24,9 @@ Dreaming or consolidation is the periodic work that keeps memory useful after ca
 | Cognee | Built-in | `improve` and graph processing workflows. | Terminology differs from dreaming. |
 | Khoj | Partial | Indexing and assistant workflows. | No central dream loop in this repo's current evaluation. |
 | Obsidian/Logseq + AI bridge | Custom collector | Nightly scripts, plugins, or external memory services. | User owns review and write-back safety. |
+| ChatGPT Memory | Built-in | Platform-managed memory behavior. | Not exposed as a user-operated maintenance loop. |
+| Claude Projects/Claude Code | Built-in | Platform RAG/project knowledge behavior. | Not a user-operated dream loop. |
+| NotebookLM | Partial | Summaries and generated artifacts. | Not an ongoing second-brain maintenance loop. |
 
 ## Sources
 

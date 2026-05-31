@@ -2,7 +2,7 @@
 
 ## What This Capability Means
 
-Privacy and control cover where memory is stored, whether users can inspect and correct it, how deletion/export works, and whether the system can be self-hosted or audited.
+Privacy, portability, and control cover where memory is stored, whether users can inspect and correct it, how deletion/export works, and whether the system can be self-hosted, exported, or audited.
 
 ## Evaluation Questions
 
@@ -24,6 +24,9 @@ Privacy and control cover where memory is stored, whether users can inspect and 
 | Cognee | Built-in in local mode | Standalone local/Docker or API mode. | Shared API mode changes control boundary. |
 | Khoj | Built-in with self-hosting | Cloud or self-hosted. | Cloud convenience changes control boundary. |
 | Obsidian/Logseq + AI bridge | Built-in | Local vault/graph and backups. | Plugin permissions can expand risk. |
+| ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, and Temporary Chat. | Platform-bound and not portable by default. |
+| Claude Projects/Claude Code | Partial | Plan, project, sharing, and workspace controls. | Project knowledge remains Claude-scoped. |
+| NotebookLM | Partial | Hosted notebook controls and source management. | No local deployment for ordinary users. |
 
 ## Sources
 

@@ -13,7 +13,7 @@
 
 ## One-line Summary
 
-Zep uses a temporal knowledge graph, built on Graphiti, to power agent memory and Graph RAG for applications.
+Zep uses a temporal knowledge graph, built on Graphiti, to power evolving memory and Graph RAG for applications.
 
 ## Second-Brain Fit
 
@@ -23,16 +23,16 @@ Zep/Graphiti is best for builders who need graph memory inside an application. I
 
 | Area | Evaluation |
 |---|---|
-| Deployment | Hosted Zep platform and Graphiti open-source graph library. |
-| Data capture | API ingestion through chat history, business data, and graph endpoints. |
-| Auto-organization | Built-in entity nodes, entity edges, episodic nodes, facts, and summaries. |
-| Consolidation / dreaming | Built-in temporal graph updates and fact/summary extraction; not framed as a user-operated dream loop. |
-| Retrieval model | Temporal knowledge graph and Graph RAG. |
-| Agent access | API/SDK first; ecosystem integrations for agent frameworks. |
-| Workspace / team support | Projects, users, sessions, and groups are part of the Zep model. |
-| UI / filtering | Developer/platform UI and graph APIs; end-user second-brain UI is not the primary surface. |
+| Deployment / ownership | Hosted Zep platform and Graphiti open-source graph library. |
+| Context capture | API ingestion through chat history, business data, and graph endpoints. |
+| Knowledge organization | Built-in entity nodes, entity edges, episodic nodes, facts, and summaries. |
+| Memory evolution | Built-in temporal graph updates and fact/summary extraction; not framed as a user-operated dream loop. |
+| Retrieval / use | Temporal knowledge graph and Graph RAG. |
+| Agent activation / write-back | API/SDK first; ecosystem integrations for agent frameworks. |
+| Personal / team scope | Projects, users, sessions, and groups are part of the Zep model. |
+| Feedback / correction | Developer/platform UI and graph APIs; end-user second-brain UI is not the primary surface. |
 | Privacy / control | Hosted platform plus open-source graph library; verify hosting and retention requirements per deployment. |
-| Setup burden | Medium. Requires application integration and data model choices. |
+| Setup / operations | Medium. Requires application integration and data model choices. |
 
 ## Strengths
 
@@ -46,9 +46,21 @@ Zep/Graphiti is best for builders who need graph memory inside an application. I
 - Requires engineering work to ingest, scope, and query memory.
 - The managed platform and open-source graph library are related but not identical deployment surfaces.
 
-## Relationship to Membase
+## Best For
 
-Zep/Graphiti is stronger for temporal graph memory inside custom applications. Membase is easier for power users and teams who want shared memory across off-the-shelf agents.
+- Developers building agent applications with temporal graph memory.
+- Products that need entities, episodes, facts, time, and business data in retrieval.
+- Teams comfortable integrating memory through APIs and SDKs.
+
+## Not Ideal For
+
+- Users who want a no-code personal second-brain setup.
+- Teams that primarily need off-the-shelf second-brain automation across existing tools.
+- Workflows where operating an application memory model is too much overhead.
+
+## Tradeoffs
+
+Zep/Graphiti is strong when memory is part of an application architecture. The tradeoff is integration work: teams must model users, sessions, data ingestion, and retrieval behavior rather than simply connecting an existing tool to a ready-made second-brain layer.
 
 ## Official Setup / Evaluation Links
 
