@@ -5,7 +5,6 @@ These projects are relevant to AI second-brain architecture but are not yet full
 | Project | Why it matters | Current status |
 |---|---|---|
 | Letta / MemGPT | Stateful agent architecture with memory blocks, archival memory, and agent-managed context. | Baseline candidate for agent-framework memory. |
-| Hindsight | Agent memory platform with memory banks, retain/recall/reflect framing, and MCP integration. | Candidate for developer/platform memory comparison. |
 | Mem.ai | AI notes app with API/MCP and consumer knowledge assistant positioning. | Candidate for AI notes / PKM product category. |
 | Tana | Structured knowledge graph notes with Supertags and AI commands. | Candidate for schema-heavy PKM category. |
 | Reflect | Encrypted AI notes app with backlinks and graph-oriented notes. | Candidate for AI notes / PKM category. |
