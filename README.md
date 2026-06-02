@@ -109,3 +109,13 @@ Core claims should be backed by official documentation, official repositories, o
 5. Open a PR with sources and verification notes.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=aristoapp%2Fawesome-second-brain&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&legend=top-left" />
+ </picture>
+</a>

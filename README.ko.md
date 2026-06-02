@@ -108,3 +108,13 @@
 5. 출처와 검증 메모를 포함해 PR을 엽니다.
 
 자세한 내용은 [ko/CONTRIBUTING.md](ko/CONTRIBUTING.md)를 참고하세요.
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=aristoapp%2Fawesome-second-brain&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&legend=top-left" />
+ </picture>
+</a>
