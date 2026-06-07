@@ -1,6 +1,6 @@
 # Which Second Brain Should I Start With?
 
-This page is organized by the second-brain lifecycle, not by mutually exclusive product categories. If two paths both apply, start with the stage that blocks you most: capture, organization, memory evolution, retrieval/use, governance, or setup burden.
+This page is organized by the second-brain lifecycle, not by mutually exclusive product categories. If two paths both apply, start with the stage that blocks you most: capture, organization, memory evolution, retrieval/use, governance, or setup burden. To avoid comparing full apps and backend substrates as the same kind of tool, use [Solution Layers](solution-layers.md) alongside this chooser.
 
 ## If You Want The Fastest End-To-End Setup
 
@@ -49,6 +49,8 @@ These options do more than store raw notes. They include product-managed digesti
 Start with [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 These options expose APIs, SDKs, MCP, or hosted infrastructure. They are better product primitives than a human notes app when memory is part of an application architecture.
+
+If the project is mostly graph, retrieval, or knowledge infrastructure rather than a memory API surface, read it as a [memory substrate](solution-layers.md#layer-model) instead of a full second-brain app.
 
 ## If You Already Live In One AI Platform
 

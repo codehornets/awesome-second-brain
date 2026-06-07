@@ -5,6 +5,7 @@
 | 문서 | 목적 |
 |---|---|
 | [Chooser](chooser.md) | 어떤 솔루션을 먼저 시도할지 결정할 때 시작하는 곳. |
+| [Solution Layers](solution-layers.md) | 완성형 앱, local workspace, agent memory layer, backend substrate, platform baseline 구분. |
 | [Capability Matrix](capability-matrix.md) | 평가된 솔루션 전반의 지원 수준, 설정 시간, 활용 채널, 유지보수 부담. |
 | [Setup Burden](setup-burden.md) | 유형별 실제 설정과 운영 작업. |
 | [Agent Activation](agent-access.md) | MCP, API, SDK, CLI, 플러그인, 플랫폼 접근을 세컨드 브레인 활용 채널로 비교. |

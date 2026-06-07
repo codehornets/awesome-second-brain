@@ -5,6 +5,7 @@ These pages help readers choose a second-brain setup by goal, support level, set
 | Page | Purpose |
 |---|---|
 | [Chooser](chooser.md) | Start here when deciding which solution to try first. |
+| [Solution Layers](solution-layers.md) | Separate complete apps, local workspaces, agent memory layers, backend substrates, and platform baselines. |
 | [Capability Matrix](capability-matrix.md) | Support labels, setup time, activation surfaces, and maintenance burden across evaluated solutions. |
 | [Setup Burden](setup-burden.md) | Practical setup and operating work for each category. |
 | [Agent Activation](agent-access.md) | MCP, API, SDK, CLI, plugin, and platform access as second-brain activation channels. |

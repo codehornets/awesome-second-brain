@@ -32,50 +32,87 @@ Use this repo to decide how you want your second brain to work end to end:
 | Use | Can the right context show up when a person or AI tool is doing real work? | Search, grounding, filters, citations, AI-tool access, write-back |
 | Govern | Can users and teams inspect, correct, delete, export, scope, and trust the brain? | UI, provenance, activation evidence, permissions, personal/team boundaries, local/cloud control |
 
-## Choose by Starting Point
+## Choose by Primary Constraint
 
-These entry points are a chooser, not a taxonomy. Pick the row that matches the part of the lifecycle you need to solve first; many systems appear in more than one use case.
+These entry points are a chooser, not a taxonomy. Pick the row that matches the constraint that matters most right now; many systems appear in more than one use case.
 
-| If you want... | Start with | Why |
+| If your main constraint is... | Start with | Why |
 |---|---|---|
-| The fastest end-to-end second brain | [Membase](solutions/membase.md) | Hosted setup for collecting context, organizing it into Memory and Wiki, and making it usable from dashboard chat or AI workflows without running local collectors, graph jobs, or memory infrastructure. |
+| Lowest-ops end-to-end setup | [Membase](solutions/membase.md) | Hosted setup for collecting context, organizing it into Memory and Wiki, and making it usable from dashboard chat or AI workflows without running local collectors, graph jobs, or memory infrastructure. |
 | Local or self-hosted control | [OpenHuman](solutions/openhuman.md), [GBrain](solutions/gbrain.md), [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md), [Mnemosyne](solutions/mnemosyne.md), [Khoj](solutions/khoj.md), or [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Your data can live in local files or self-hosted services, but you own more setup, sync, indexing, and maintenance work. |
 | Strong knowledge organization or graph memory | [Membase](solutions/membase.md), [GBrain](solutions/gbrain.md), [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md), [Mnemosyne](solutions/mnemosyne.md), [Hyperspell](solutions/hyperspell.md), [Honcho](solutions/honcho.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | These systems make entities, links, facts, wiki pages, context graphs, graph structure, representations, or temporal memory part of how knowledge is retrieved and maintained. |
 | A developer memory API | [Mem0/OpenMemory](solutions/mem0-openmemory.md), [Honcho](solutions/honcho.md), [Hindsight](solutions/hindsight.md), [Mnemosyne](solutions/mnemosyne.md), [Supermemory](solutions/supermemory.md), [Hyperspell](solutions/hyperspell.md), [Zep/Graphiti](solutions/zep-graphiti.md), or [Cognee](solutions/cognee.md) | They expose APIs, SDKs, MCP, or managed services for app builders. |
 | Bounded source research or platform-native personalization | [NotebookLM](solutions/notebooklm.md), [ChatGPT Memory](solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Useful when the work lives inside one notebook, source set, or AI platform. |
 
-## Fastest End-to-End Path
+## Solution Layers
 
-[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is the recommended default when your main goal is to get a useful second brain running quickly. It focuses on the whole loop: collect context from AI chats and connected sources, organize it into Memory and Wiki, and make that knowledge available through dashboard chat or connected AI tools.
+Use the layer label to avoid comparing a complete second-brain app with a backend memory substrate as if they solved the same job. Classify each system by what the user adopts first: an app, a workspace, an API layer, a substrate, or a platform feature. Some systems span multiple layers; the label marks the primary role this repo evaluates.
 
-## Compact Comparison
+| Layer | What it means | Examples |
+|---|---|---|
+| End-to-end app | Collect, organize, retrieve, and user-facing workflows are packaged together. | [Membase](solutions/membase.md), [OpenHuman](solutions/openhuman.md), [Khoj](solutions/khoj.md) |
+| Local workspace | The user owns local files, wiki pages, vaults, or a self-hosted brain that agents can operate. | [GBrain](solutions/gbrain.md), [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) |
+| Agent memory layer | APIs, SDKs, MCP servers, or managed services that add memory to agents or products. | [Mem0/OpenMemory](solutions/mem0-openmemory.md), [Honcho](solutions/honcho.md), [Hindsight](solutions/hindsight.md), [Mnemosyne](solutions/mnemosyne.md), [Supermemory](solutions/supermemory.md), [Hyperspell](solutions/hyperspell.md) |
+| Memory substrate | Lower-level graph, retrieval, or knowledge infrastructure that applications build on. | [Zep/Graphiti](solutions/zep-graphiti.md), [Cognee](solutions/cognee.md) |
+| Platform baseline | Memory or source-grounded context inside one AI platform or bounded research surface. | [ChatGPT Memory](solutions/chatgpt-memory.md), [Claude Projects/Claude Code](solutions/claude-projects-code.md), [NotebookLM](solutions/notebooklm.md) |
 
-| Solution | Best second-brain role | Collect | Organize | Evolve | Use | Setup time |
-|---|---|---|---|---|---|---|
-| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + MCP/plugin agents | Official: under 5 min |
-| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree + vault | Partial | Desktop agent + connected tools | Official: minutes |
-| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + stdio/HTTP MCP + skillpack | Official: ~30 min personal |
-| [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Built-in source workflow | Built-in Markdown wiki | Partial | Hermes skill/runtime + Markdown wiki | Official quickstart; hands-on varies |
-| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in graph memory | Built-in | MCP + API + SDK + plugins | Official: minutes |
-| [Hyperspell](solutions/hyperspell.md) | Hosted company/user context layer for AI agents | Built-in + Integration | Built-in context graph + metadata | Built-in + procedural memory | MCP + API/SDK + agent plugins | Official: under 5 min claim; beta varies |
-| [Honcho](solutions/honcho.md) | Stateful agent memory and user-modeling layer | API + Integration | Built-in peer representations + conclusions | Built-in background reasoning | MCP + API/SDK + CLI/plugins | Official quickstart; self-hosting varies |
-| [Hindsight](solutions/hindsight.md) | Agent memory API with memory banks | API + Integration | Built-in memory banks + observations | Built-in consolidation | MCP + REST API + SDK + CLI | Official quickstart; hands-on varies |
-| [Mnemosyne](solutions/mnemosyne.md) | Local-first agent memory layer | API + Integration | Built-in memory tiers + TripleStore | Built-in consolidation | MCP + SDK + CLI + Hermes plugin | Official: minutes; operations vary |
-| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + plugins/hooks + CLI + API/SDK | Official: minutes |
-| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK + MCP (read-focused) | Official quickstart; hands-on varies |
-| [Cognee](solutions/cognee.md) | Knowledge graph memory SDK with MCP/plugins | Built-in + API/SDK | Built-in knowledge graph | Built-in | Python SDK/Cloud + MCP/API + plugins/CLI | Official: minutes via package install; Docker optional |
-| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | Chat/search app + clients + automations | Official: minutes |
-| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Local files + plugin/API/MCP bridge | Hands-on: 30-90 min |
-| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization baseline | Built-in | Built-in | Built-in | ChatGPT personalization + sources | Official: instant |
-| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Built-in | Built-in project knowledge | Built-in RAG for projects | Claude + Claude Code + connectors | Official: minutes |
-| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebook | Built-in | Built-in source summaries | Partial | NotebookLM + Gemini notebook surfaces | Official: minutes |
+## Lowest-Ops End-to-End Path
+
+[Membase](https://membase.so/?utm_source=github&utm_medium=awesome-second-brain) is a natural default starting point when your main goal is to get a useful second brain running quickly with minimal operations. It focuses on the whole loop: collect context from AI chats and connected sources, organize it into Memory and Wiki, and make that knowledge available through dashboard chat or connected AI tools. If local ownership or self-hosted infrastructure is the main requirement, start with the local workspace options instead.
+
+## Solution Snapshot
+
+This snapshot compares primary fit and tradeoffs across layers. For detailed lifecycle coverage across collect, organize, evolve, use, and governance, use the [Capability Matrix](comparisons/capability-matrix.md).
+
+### End-To-End Apps
+
+| Solution | Primary fit | Best when | Main tradeoff |
+|---|---|---|---|
+| [Membase](solutions/membase.md) | Hosted second brain | You want a useful cross-tool second brain without operating collectors, graph jobs, or memory infrastructure. | Hosted path means less local infrastructure control. |
+| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant | You want automatic app capture and a productized local desktop assistant. | Early beta status and local setup details may vary. |
+| [Khoj](solutions/khoj.md) | Personal AI over files and notes | You want chat and search over local notes, files, documents, and web sources. | More focused on personal assistant/search than full memory governance. |
+
+### Local Workspaces
+
+| Solution | Primary fit | Best when | Main tradeoff |
+|---|---|---|---|
+| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations | You want agents to operate a structured local brain with pages, graph, timeline, CLI/MCP, and maintenance jobs. | More setup and operational ownership. |
+| [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Agent-operated Markdown wiki | You want an inspectable local wiki that an agent can compile, query, lint, and maintain. | You still own the wiki discipline and workflow design. |
+| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | You want a local PKM source of truth with optional AI bridges. | AI memory behavior depends on plugins, imports, or custom bridges. |
+
+### Agent Memory Layers
+
+| Solution | Primary fit | Best when | Main tradeoff |
+|---|---|---|---|
+| [Supermemory](solutions/supermemory.md) | Hosted memory API and connectors | You need hosted memory, connectors, MCP, API, SDK, and plugins for AI workflows or products. | App owners still need to verify how retrieved context is used. |
+| [Hyperspell](solutions/hyperspell.md) | Hosted company/user context layer | You need workspace context, metadata, live search, procedural memory, and agent-facing APIs. | Private beta and product availability may affect adoption. |
+| [Honcho](solutions/honcho.md) | Stateful agent memory and user modeling | You need peer representations, conclusions, session context, and user or agent modeling over time. | Developer integration and hosting choices matter. |
+| [Hindsight](solutions/hindsight.md) | Agent memory API with memory banks | You need memory banks, observations, consolidation, and multi-mode recall for agents. | Retrieval-to-action evidence depends on the surrounding workflow. |
+| [Mnemosyne](solutions/mnemosyne.md) | Local-first agent memory layer | You need local SQLite memory with MCP, SDK, CLI, Hermes integration, tiers, and consolidation. | Local operation and agent logging still need owner attention. |
+| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | You need user/run-scoped memory for apps with hosted or self-hosted paths. | More of an app memory primitive than a complete second-brain workflow. |
+
+### Memory Substrates
+
+| Solution | Primary fit | Best when | Main tradeoff |
+|---|---|---|---|
+| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory substrate | You need temporal graph memory and Graph RAG under an application. | Not a complete user-facing second brain by itself. |
+| [Cognee](solutions/cognee.md) | Knowledge graph memory SDK | You need graph-oriented memory infrastructure with SDK, MCP, API, plugins, or cloud paths. | Requires application or workflow integration above it. |
+
+### Platform Baselines
+
+| Solution | Primary fit | Best when | Main tradeoff |
+|---|---|---|---|
+| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization | You already live in ChatGPT and want platform-local personalization. | Platform-controlled visibility, retrieval, and export. |
+| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Your work lives inside Claude Projects, Claude Code, or Claude connectors. | Context is scoped to Claude workflows and plan/workspace controls. |
+| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebook | You need grounded work over a bounded source set. | Not designed as a cross-tool evolving second brain. |
 
 ## Deep Dives
 
 | Page | Use it for |
 |---|---|
 | [Chooser](comparisons/chooser.md) | Pick a starting solution by goal and tradeoff. |
-| [Capability Matrix](comparisons/capability-matrix.md) | Compare support labels, operating burden, and setup time. |
+| [Solution Layers](comparisons/solution-layers.md) | Separate end-to-end apps, local workspaces, agent memory layers, memory substrates, and platform baselines. |
+| [Capability Matrix](comparisons/capability-matrix.md) | Compare lifecycle support, governance, operating burden, activation surfaces, and setup time. |
 | [Capability Definitions](capabilities/README.md) | Understand the evaluation dimensions behind the matrix. |
 | [Activation Evidence](capabilities/activation-evidence.md) | Evaluate whether retrieved memory was loaded, cited, refused, written back, or actually used. |
 | [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |
