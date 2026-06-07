@@ -22,6 +22,7 @@
 | Supermemory | 내장 + 연동 | MCP/API와 커넥터. | 커넥터 상태와 프로젝트 범위 지정이 중요합니다. |
 | Hyperspell | 내장 + 연동 | dashboard/API key, SDK/API 또는 MCP 설정, app user ID 또는 user token, Hyperspell Connect, source 선택, metadata/scope 설계. | 공식 5분 이내 claim은 demo에는 가능해 보이지만 production setup은 beta access, app integration, governance 선택에 따라 달라집니다. |
 | Honcho | 연동 | hosted MCP/API key 또는 self-hosted FastAPI server, SDK/MCP 연동, peer/session 설계, self-hosting용 provider key. | hosted agent 설정은 빠르지만 production integration과 self-hosting은 backend 운영을 추가합니다. |
+| Mnemosyne | 연동 | `mnemosyne-memory`를 설치하고 MCP/SDK 사용을 설정하거나, `mnemosyne-hermes`를 설치한 뒤 Hermes provider를 활성화합니다. | 설정은 빠를 수 있지만 유용한 운영에는 memory scope, embedding, consolidation, verification 선택이 필요합니다. |
 | Mem0/OpenMemory | 연동 | hosted MCP/API 또는 self-hosted stack. | memory 설계는 애플리케이션 작업입니다. |
 | Zep/Graphiti | API | 앱 연동, 그래프 수집, 그래프 backend, LLM/embedding provider 설정. | 빌더 중심입니다. 공식 quickstart는 있지만 backend 선택에 따라 실제 소요 시간이 달라집니다. |
 | Cognee | 내장 | Python package/SDK 설정, 선택적 MCP config, 선택적 Docker 또는 API/Cloud mode. | Docker는 필수가 아니며, 모드를 신중히 선택해야 합니다. |
@@ -39,5 +40,7 @@
 - [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
+- [Mnemosyne PyPI package](https://pypi.org/project/mnemosyne-memory/)
+- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
 - [Cognee installation](https://docs.cognee.ai/getting-started/installation)

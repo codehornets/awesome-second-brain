@@ -22,6 +22,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 | Supermemory | Built-in | Hybrid search across extracted memories and document chunks, graph memory, project/container scoping, metadata, and API filters. | Connector and project scoping must be configured carefully. |
 | Hyperspell | Built-in | Indexed search, live search, multi-source query, metadata/date/resource filters, source weighting, LLM-ready summaries, optional answer generation, and MCP search/get tools. | Indexed/live availability depends on source; beta integrations and query behavior should be verified per account. |
 | Honcho | Built-in | Hybrid search, context retrieval, peer/session representations, peer cards, conclusions, and natural-language context queries. | Source metadata and citation UX depend on how the app or agent writes data into Honcho. |
+| Mnemosyne | Built-in | Hybrid recall combines vector similarity, SQLite FTS5, and importance weighting; MCP, CLI, SDK, and Hermes plugin surfaces can retrieve memory. | Source grounding depends on how memories are written and whether the host agent records retrieved context. |
 | Mem0/OpenMemory | Built-in | Layered memory search with user IDs, run IDs, and metadata. | App owners define grounding and source metadata quality. |
 | Zep/Graphiti | Built-in | Temporal knowledge graph, facts, episodes, and Graph RAG. | Best when application data is modeled explicitly. |
 | Cognee | Built-in | Knowledge graph memory and recall tools. | Retrieval quality depends on ingestion and graph processing mode. |
@@ -38,5 +39,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 - [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
 - [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
+- [Mnemosyne docs](https://docs.mnemosyne.site/)
+- [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

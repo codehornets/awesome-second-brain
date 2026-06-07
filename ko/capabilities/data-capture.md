@@ -22,6 +22,7 @@
 | Supermemory | 내장 + 연동 | MCP/API와 Drive, Gmail, Notion, OneDrive, GitHub, Web Crawler. | 커넥터 권한, 동기화 상태, container/project 태그가 중요합니다. |
 | Hyperspell | 내장 + 연동 | Hyperspell Connect, workspace integration, manual add, bulk ingestion, file upload, web crawler, folder sync policy, trace ingestion. | private beta/계정별 사용 가능 여부가 다릅니다. app owner가 source, metadata, user scoping을 직접 선택해야 합니다. |
 | Honcho | API + 연동 | API/SDK/MCP write로 message, session, uploaded document를 추가합니다. | 넓은 외부 source capture는 통합하는 app 또는 agent에 달려 있습니다. |
+| Mnemosyne | API + 연동 | MCP/CLI/SDK write, Python `remember`, memory bank, Hermes lifecycle hook이 agent context를 수집할 수 있습니다. | 넓은 OAuth connector 계층은 아니며 capture는 agent, hook, developer 주도입니다. |
 | Mem0/OpenMemory | API + 연동 | 앱 또는 AI workflow에서 SDK/API/MCP로 쓰기. | 수집 설계는 애플리케이션이 책임집니다. |
 | Zep/Graphiti | API | 대화 히스토리, 비즈니스 데이터, 그래프 엔드포인트. | 앱 연동이 필요합니다. |
 | Cognee | 내장 + API | MCP memory/data 도구와 그래프 처리. | standalone 모드와 shared 모드에 따라 데이터가 저장되는 위치가 달라집니다. |
@@ -41,4 +42,6 @@
 - [Hyperspell integrations](https://docs.hyperspell.com/integrations/overview)
 - [Hyperspell Connect](https://docs.hyperspell.com/usage/connect)
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
+- [Mnemosyne docs](https://docs.mnemosyne.site/)
+- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [Khoj docs](https://docs.khoj.dev/)

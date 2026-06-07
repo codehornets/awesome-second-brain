@@ -22,6 +22,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 | Supermemory | Built-in + Integration | MCP/API and connectors. | Connector health and project scoping matter. |
 | Hyperspell | Built-in + Integration | Dashboard/API key, SDK/API or MCP setup, app user IDs or user tokens, Hyperspell Connect, source selection, and metadata/scope design. | Official under-5-minute claim is plausible for a demo; production setup depends on beta access, app integration, and governance choices. |
 | Honcho | Integration | Hosted MCP/API key or self-hosted FastAPI server, SDK/MCP integration, peer/session design, and provider keys for self-hosting. | Hosted agent setup is quick; production integration and self-hosting add backend operations. |
+| Mnemosyne | Integration | Install `mnemosyne-memory`, configure MCP or SDK usage, or install `mnemosyne-hermes` and activate the Hermes provider. | Setup can be quick, but useful operation requires memory scope, embedding, consolidation, and verification choices. |
 | Mem0/OpenMemory | Integration | Hosted MCP/API or self-hosted stack. | Memory design is application work. |
 | Zep/Graphiti | API | App integration, graph ingestion, graph backend, and LLM/embedding provider setup. | Builder-focused; official quickstarts exist, but hands-on time varies with backend choices. |
 | Cognee | Built-in | Python package/SDK setup, optional MCP config, optional Docker or API/Cloud mode. | Docker is not required; choose mode carefully. |
@@ -39,5 +40,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 - [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
+- [Mnemosyne PyPI package](https://pypi.org/project/mnemosyne-memory/)
+- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
 - [Cognee installation](https://docs.cognee.ai/getting-started/installation)

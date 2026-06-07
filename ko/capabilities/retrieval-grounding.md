@@ -22,6 +22,7 @@
 | Supermemory | 내장 | 추출된 memory와 문서 chunk를 함께 찾는 hybrid search, graph memory, project/container 범위 지정, 메타데이터, API 필터. | 커넥터와 프로젝트 범위를 신중히 설정해야 합니다. |
 | Hyperspell | 내장 | indexed search, live search, multi-source query, metadata/date/resource filter, source weighting, LLM-ready summary, optional answer generation, MCP search/get tool. | indexed/live availability는 source에 따라 다릅니다. beta integration과 query behavior는 계정별로 검증해야 합니다. |
 | Honcho | 내장 | hybrid search, context retrieval, peer/session representation, peer card, conclusion, natural-language context query. | source metadata와 citation UX는 app 또는 agent가 Honcho에 데이터를 쓰는 방식에 달려 있습니다. |
+| Mnemosyne | 내장 | Hybrid recall이 vector similarity, SQLite FTS5, importance weighting을 결합하고, MCP, CLI, SDK, Hermes plugin surface가 memory를 검색할 수 있습니다. | Source grounding은 memory write 방식과 host agent가 retrieved context를 기록하는지에 달려 있습니다. |
 | Mem0/OpenMemory | 내장 | user ID, run ID, metadata가 있는 layered memory search. | 앱 소유자가 grounding과 출처 메타데이터 품질을 정의합니다. |
 | Zep/Graphiti | 내장 | temporal knowledge graph, fact, episode, Graph RAG. | 애플리케이션 데이터가 명시적으로 모델링될 때 가장 좋습니다. |
 | Cognee | 내장 | knowledge graph memory와 recall 도구. | 검색 품질은 수집과 그래프 처리 모드에 의존합니다. |
@@ -38,5 +39,7 @@
 - [Hyperspell manual integration](https://docs.hyperspell.com/core/integration)
 - [Hyperspell MCP overview](https://docs.hyperspell.com/advanced/mcp-overview)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
+- [Mnemosyne docs](https://docs.mnemosyne.site/)
+- [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

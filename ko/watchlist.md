@@ -5,7 +5,6 @@
 | 프로젝트 | 중요한 이유 | 현재 상태 |
 |---|---|---|
 | Letta / MemGPT | memory block, archival memory, agent-managed context를 가진 stateful agent architecture. | agent-framework memory 기준선 후보. |
-| Hindsight | memory bank, retain/recall/reflect framing, MCP integration을 가진 agent memory platform. | developer/platform memory 비교 후보. |
 | Mem.ai | API/MCP와 consumer knowledge assistant positioning을 가진 AI notes app. | AI notes / PKM product category 후보. |
 | Tana | Supertag와 AI command를 가진 structured knowledge graph notes. | schema-heavy PKM category 후보. |
 | Reflect | backlink와 graph-oriented notes를 가진 encrypted AI notes app. | AI notes / PKM category 후보. |

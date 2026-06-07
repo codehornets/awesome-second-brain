@@ -21,6 +21,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 | Hermes Agent + LLM Wiki | Local/server-owned | Hermes runs on user-controlled infrastructure, and the wiki is a Markdown directory at `WIKI_PATH` or `~/wiki`. | Model providers, web extraction, browser use, and sync choices can still introduce cloud dependencies. |
 | Supermemory | Hosted + API | Hosted MCP, API, SDK, and connectors. | Self-hosting/control details should be verified for the target plan. |
 | Hyperspell | Hosted + API | Hosted dashboard, memory/context platform, SDKs, API, MCP server, and public plugin/SDK repos. | Core memory platform is managed; private beta availability and data residency/retention details should be verified. |
+| Mnemosyne | Local-first | Python package, local SQLite database, MCP server, SDK calls, and Hermes plugin path. | Users still operate embeddings, consolidation, memory scope, and agent integration behavior. |
 | Mem0/OpenMemory | Hosted/self-hosted | Hosted Mem0 Platform or open-source server/library path. | Self-hosting still requires memory infrastructure decisions. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform or Graphiti library integration. | Platform and library are related but not identical surfaces. |
 | Cognee | SDK/local/API mode | Python package/SDK with local databases, optional local/Docker MCP setup, or shared API/Cloud mode. | Mode choice affects memory isolation and sharing. |
@@ -36,5 +37,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 - [Hermes Agent website](https://hermes-agent.nousresearch.com/)
 - [Hyperspell docs](https://docs.hyperspell.com/)
 - [Hyperspell GitHub org](https://github.com/hyperspell)
+- [Mnemosyne docs](https://docs.mnemosyne.site/)
+- [Mnemosyne PyPI package](https://pypi.org/project/mnemosyne-memory/)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

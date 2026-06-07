@@ -22,6 +22,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | Supermemory | Built-in | Hosted app, console, connector status, projects, and filters. | Team/admin inspection depends on plan and setup. |
 | Hyperspell | Partial | Dashboard, list/get/update memory APIs, metadata filtering, indexing status, query errors, webhooks, evaluation API, and folder manual-review states. | End-user second-brain UI is mostly app-owned; verify dashboard visibility for target account. |
 | Honcho | Partial | Developer-facing workspace, peer, session, conclusion, queue, and metadata tools through API/MCP. | Polished end-user review and correction UI is integration-owned. |
+| Mnemosyne | Partial | CLI, export/import, update/delete/invalidate tools, diagnostics, scratchpad tools, and local SQLite files provide operator inspection paths. | No hosted human-facing review dashboard is documented as the primary surface. |
 | Mem0/OpenMemory | Built-in | Platform dashboard and self-hosted dashboard/server paths. | Application owners still define user-facing review flows. |
 | Zep/Graphiti | Partial | Developer/platform UI and graph APIs. | End-user second-brain UI is not the primary surface. |
 | Cognee | Partial | Developer/admin surfaces and MCP tool references. | End-user inspection should be verified for the target workflow. |
@@ -39,5 +40,6 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [Hyperspell list memories](https://docs.hyperspell.com/api-reference/memories/list-memories)
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
+- [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

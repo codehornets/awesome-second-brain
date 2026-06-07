@@ -16,6 +16,7 @@
 | [Supermemory](../solutions/supermemory.md) | MCP/API auth, optional project scoping, connectors, API usage. | Connector status, project boundaries, and source deletion semantics. |
 | [Hyperspell](../solutions/hyperspell.md) | App/API keys, user tokens, Hyperspell Connect, source selection, metadata/collection design, MCP or SDK integration. | Private beta availability and app-owned governance/review UI. |
 | [Honcho](../solutions/honcho.md) | Hosted MCP/API key or self-hosted FastAPI server, SDK/MCP integration, peer/session design, provider keys for self-hosting. | Agent memory quality depends on integration design; self-hosting adds backend operations. |
+| [Mnemosyne](../solutions/mnemosyne.md) | Python package, local SQLite data path, MCP/SDK/Hermes plugin configuration, embedding settings, memory banks, and consolidation cadence. | Easy to start, but retrieval quality and write-back safety depend on agent integration and memory-scope design. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | API keys, SDK integration, hosted or self-hosted stack. | Memory scope design, governance, and retrieval tuning. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | App integration, user/session/group model, graph ingestion, graph backend, LLM/embedding provider. | Requires product engineering rather than end-user setup. |
 | [Cognee](../solutions/cognee.md) | Python package/SDK setup, optional MCP client config, optional Docker or API/Cloud mode, graph processing. | Separate standalone instances vs shared API mode can fragment memory. |
